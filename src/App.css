@@ -1,38 +1,120 @@
 .App {
-  text-align: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 250px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.cv {
+    text-align: center;
+    margin-left: 0 !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cv.name {
+    background-color: #f6f6f6;
 }
 
-.App-link {
-  color: #61dafb;
+.personal {
+    background-color: #f6f6f6;
+    width: 30%;
+    margin: 10px 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.name {
+    color: #083A50;
+    margin: 10px;
+    padding: 10px;
+}
+
+.personal .name {
+    font-weight: 900;
+    font-size: 40px;
+}
+
+.icons {
+    height: 20px;
+    padding: 0 10px;
+}
+
+.personal-info {
+    text-align: justify;
+    color: black;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 10px;
+}
+
+.personal-info a {
+    padding: 0;
+}
+
+.personal-block {
+    background-color: #ffff;
+    border: 1px dashed #f8b4c0;
+    margin: 10px;
+    padding: 10px;
+    line-height: 1.6;
+}
+
+.profile-title, .experiences p, .educational p {
+    color: black;
+    text-shadow: none;
+}
+
+.professional {
+    width: 70%;
+    text-align: justify;
+}
+
+.experiences, .educational{
+    text-align: justify;
+    text-shadow: none;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    border-bottom: 1px dashed #f8b4c0;
+}
+
+.educational:last-child {
+    border-bottom: none;
+}
+
+.experiences h4 span{
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+@media (max-width: 400px) {
+    .App {
+        margin: 0;
+        display: block;
+    }
+
+    .cv {
+        text-align: center;
+        margin: 10px !important;
+    }
+
+    .container {
+        display: block;
+    }
+
+    .personal {
+        width: 100%;
+        padding: 10px 0;
+    }
+    .professional {
+        width: auto;
+    }
 }
