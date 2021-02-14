@@ -21,11 +21,11 @@
 }
 
 .cv.name {
-    background-color: #f6f6f6;
+    background-color: #fdedeb;
 }
 
 .personal {
-    background-color: #f6f6f6;
+    background-color: #fdedeb;
     width: 30%;
     margin: 10px 0;
 }
@@ -95,7 +95,27 @@
     font-weight: 500;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 1160px) {
+    .App {
+        margin: 0;
+        display: block;
+    }
+
+    .cv {
+        text-align: center;
+        margin: 10px !important;
+    }
+
+    .personal {
+        width: 40%;
+        padding: 10px 0;
+    }
+    .professional {
+        width: 60%;
+    }
+}
+
+@media (max-width: 480px) {
     .App {
         margin: 0;
         display: block;
