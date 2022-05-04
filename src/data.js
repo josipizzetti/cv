@@ -20,26 +20,35 @@ export const personal = [
     },
     {
         title: 'Projects',
-        description: `<a href="https://github.com/josipizzetti">https://github.com/josipizzetti</a>
-        <a href="https://fithiitbyana.com/">https://fithiitbyana.com/</a>`
+        description: `<a href="https://github.com/josipizzetti">github.com/josipizzetti</a>
+        <a href="https://fithiitbyana.com/">fithiitbyana.com</a>`
     },
     {
         title: 'Languages',
-        description: `English - Portuguese - Spanish (basic)`
+        description: `English (fluent) <br/> Portuguese (native) <br/> Spanish (basic) <br/> Italian (basic)`
     }
 ];
 
 export const experiences = [
     {
+        company: 'SendSteps',
+        role: 'Front-end developer',
+        period: 'January/2022 - current job',
+        activities: `Development of projects and solutions for a platform specialized to help 
+        presenters to connect with their audience, giving them a voice and a chance to interact 
+        in any presentation.`, 
+        tech: `React, Redux, HTML5, CSS3, MaterialUI, Jest, Testing-library and Cypress.`
+    },
+    {
         company: 'Gaspedaal (DPGmedia)',
         role: 'Front-end developer',
-        period: 'April/2019 - current job',
+        period: 'April/2019 - December/2021',
         activities: `Development of projects and solutions for a platform specialized to help
         people to find a car that matches with their expectations and also help car dealers to
         bring more customers to their business.  Currently I’m leading a project where we are developing
         a new front-end totally independent from the backend in React.`,
         tech: `React, Redux,
-        NextJs, React-native, JavaScript (VanillaJS), HTML5, CSS3, SASS, Styled Components, PHP, NodeJS,
+        NextJs, React-native, JavaScript (VanillaJS), HTML5, CSS3, SASS, Styled-components, PHP, NodeJS,
         Jest, Testing-library and Cypress.`
     },
     {

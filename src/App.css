@@ -1,43 +1,75 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200;400;700&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&family=Dosis:wght@200;400;700&display=swap');
+
+body {
+    background-color: #f8f7f1;
+}
+
 .App {
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0 250px;
+    margin: 0 16px;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 400;
 }
 
 .container {
     text-align: center;
     display: flex;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
     width: 100%;
 }
 
 .cv {
     text-align: center;
     margin-left: 0 !important;
+    font-size: 30px;
 }
 
 .cv.name {
-    background-color: #fdedeb;
+    border-bottom: 1px solid #dfded9;
+    color: #000;
+    font-weight: 700;
+    font-size: 18px;
 }
 
 .personal {
-    background-color: #fdedeb;
-    width: 30%;
+    background-color: #f7ddcf;
+    width: 25%;
     margin: 10px 0;
 }
 
+.personal-float {
+    background-color: #1e2046;
+    padding: 24px;
+    position: absolute;
+    top: 80px;
+    left: 7%;
+}
+
+.personal-float h3{
+    margin: 0;
+    color: #f7ddcf;
+}
+
+.personal:first-child {
+    width: 30%;
+}
+
+.personal:nth-child(2) {
+    width: 20%;
+}
+
 .name {
-    color: #083A50;
-    margin: 10px;
-    padding: 10px;
+    color: #000;
+    padding: 16px;
+    margin: 0;
+    font-weight: 400;
 }
 
 .personal .name {
-    font-weight: 900;
     font-size: 40px;
 }
 
@@ -60,29 +92,49 @@
 }
 
 .personal-block {
-    background-color: #ffff;
-    border: 1px dashed #f8b4c0;
-    margin: 10px;
-    padding: 10px;
+    background-color: #f8f7f1;
+    margin: 8px;
+    padding: 8px;
     line-height: 1.6;
+}
+
+.education-block {
+    margin: 8px;
+    padding: 8px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.educational {
+    text-align: initial;
+    text-shadow: none;
+    line-height: 1.6;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #1e2046;
 }
 
 .profile-title, .experiences p, .educational p {
     color: black;
     text-shadow: none;
+    font-size: 14px;
+}
+
+.profile-title {
+    color: #1e1f46;
+    font-size: 22px;
 }
 
 .professional {
-    width: 70%;
+    width: 50%;
     text-align: justify;
 }
 
-.experiences, .educational{
+.experiences {
     text-align: justify;
     text-shadow: none;
     line-height: 1.6;
-    margin-bottom: 50px;
-    border-bottom: 1px dashed #f8b4c0;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #1e2046;
 }
 
 .educational:last-child {
@@ -110,6 +162,12 @@
         width: 40%;
         padding: 10px 0;
     }
+
+    .personal-float {
+        top: 100px;
+        left: 8px;
+    }
+
     .professional {
         width: 60%;
     }
@@ -129,8 +187,17 @@
     .container {
         display: block;
     }
+    
+    .personal-float {
+        top: 140px;
+        left: 16px;
+    }
+   
+    .name {
+        margin-bottom: 48px;
+    }
 
-    .personal {
+    .personal, .personal:first-child{
         width: 100%;
         padding: 10px 0;
     }
