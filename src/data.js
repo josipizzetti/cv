@@ -20,7 +20,7 @@ export const personal = [
     },
     {
         title: 'Projects',
-        description: `<a href="https://github.com/josipizzetti">github.com/josipizzetti</a>
+        description: `<a href="https://github.com/josipizzetti">github.com/josipizzetti</a> <br/> 
         <a href="https://fithiitbyana.com/">fithiitbyana.com</a>`
     },
     {
